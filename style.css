@@ -1,0 +1,360 @@
+.body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color:#d6704b;
+}
+.nav{
+width: 100%;
+height: 150px;
+background-color: #d6704b;
+
+}
+
+.color{
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.btn1{
+    width: 10;
+    height: 40px;
+    background-color: #ff895e;
+    bottom: 50px;
+}
+.img{
+    width: 20%;
+    height: 50;
+    margin-left: 10%;
+}
+.sombra{
+  box-shadow: 6px 6px 6px black;
+}
+.fondo{
+    
+    width: 100%;   
+}
+.fondo2{
+    width: 100%;
+    margin-top: 4%;
+}
+.contenedor{
+    width: 70%;
+    height: 30%;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -40%); 
+}
+.color1{
+    width: 20%;
+    height: 60px;
+    background-color: white;
+    color: black;
+    bottom: 50px;
+    margin-top: 30%;
+    margin-left: 10%;
+    
+}
+.letra{
+  font-size: 2vw;
+}
+.tamaño{
+    width: 200%;
+    margin-top: 40%;
+}
+.text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:cursive;
+    font-size:100px;
+    
+    
+
+}   
+.products{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:cursive;
+    font-size:89px;
+
+} 
+.txt{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.txtimg{
+    position: absolute;
+    top: 90%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+} 
+.txtim{
+    position: absolute;
+    top: 110%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+} 
+.txti{
+    position: absolute;
+    top: 130%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+} 
+.imge{
+    width: 90px;
+}
+.a :hover{
+        cursor: pointer;
+}
+.compra{
+    width: 30%;
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+} 
+.compra2{
+    width: 30%;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+} 
+.btncomprar{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-100%, -40%); 
+}
+.productsn{
+    width: 70%;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+} 
+.comprap{
+    width: 60%;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} 
+.btncomprar1{/*cada que le click aparecer otro id producto y cantidad*/
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.btncomprar2{ /*cada que le click aparecer ventana ¡Pedido enviado exitosamente*/
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.pagar{/*aparecer el total a pagar*/
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 129%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: white; 
+}
+.formlogin{
+        width: 35%;
+        height: 20%;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.letralink{
+    color: rgb(148, 142, 142);
+}
+.admi{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:cursive;
+    font-size:69px;
+}
+.registrar{
+    position: absolute;
+    top: 5%;
+    left:70%;
+    transform: translate(-50%, -50%);
+}
+.cancelar{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 556px) {
+    /* Estilos específicos para dispositivos móviles */
+    .nav {
+        height: 100px; /* Ajustar la altura según sea necesario */
+    }
+
+    .color {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    /* Agrega más estilos según sea necesario para dispositivos móviles */
+}
+
+@media screen and (min-width: 557px) and (max-width: 1025px) {
+.txt{
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+.text2 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 100px;
+}
+.d-flex {
+    display: flex!important;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
+.color {
+    color: white;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+.tamaño {
+    width: 200%;
+    margin-bottom: 110%;
+}
+
+.color1 {
+    margin-top: 13%;
+    margin-left: 10%;
+    width: 20%;
+}
+.products {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 40px;
+}
+.compra {
+    width: 30%;
+    position: absolute;
+    top: 39%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.compra2 {
+    width: 30%;
+    position: absolute;
+    top: 39%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+}
+.txtimg {
+    position: absolute;
+    top: 35%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+.txtim {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+.txti {
+    position: absolute;
+    top: 63%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+.text2 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 57px;
+}
+.btnin{
+    margin-left: 8%;
+    width: 10%;
+}
+.formlogin {
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+}
+.tamaño {
+    width: 200%;
+    margin-top: 8%;
+}
+.admi {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 30px;
+}
+.comprap {
+    width: 65%;
+    position: absolute;
+    top: 39%;
+}
+.registrar{
+
+    top: 95%;
+}
+.cancelar{
+    top: 95%;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 2200px) {
+    .admi {
+        position: absolute;
+        top: 35%;
+}
+.color1 {
+    margin-top: 23%;
+    margin-left: 10%;
+    width: 26%;
+}
+.btncomprar {
+    position: absolute;
+    top: 100%;
+}
+}
