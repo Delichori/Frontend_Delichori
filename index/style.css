@@ -1,0 +1,132 @@
+
+/*borre .contenedor .tamaño .texto2*/
+.nav{
+width: 100%;
+height: 160px;
+background-color: #d6704b;
+
+}
+.imgfondo{ 
+    width: 100%;
+}
+.color{
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.btn1{
+    width: 10;
+    height: 40px;
+    background-color: #ff895e;
+    bottom: 50px;
+}
+.img{
+    width: 20%;
+    height: 50;
+    margin-left: 10%;
+}
+.sombra{
+  box-shadow: 6px 6px 6px black;
+}
+
+
+.centrado{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-100%, -40%); 
+}
+.color1{
+    width: 20%;
+    height: 60px;
+    background-color: white;
+    color: black;
+    bottom: 50px;
+    margin-top: 30%;
+    margin-left: 5%;
+    transform: translate(-50%, -50%);  
+}
+.imgletra{
+   width: 50%;
+    transform: translate(-50%, -50%);  
+    position: absolute;
+    top: 85%;
+    left: 50%;
+   
+}
+.footer{ 
+    width: 100%;
+    background-color:  #d6704b;
+   
+}
+.pie img{
+    width: 90px;
+}
+
+
+/*RESPONSIVE*/
+
+/*SI FUNCIONA */
+    /*RESPONSIVE*/
+ 
+    /*MOVILES*/
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+        .d-flex {
+            display: flex!important;
+            align-items: baseline;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+       
+        .color1 {
+            width: 30%;
+            height: 50px;
+            margin-left: 5%;
+            margin-top: 50%;
+        }
+        .imgfondo{
+   
+            width: 100%;
+          height: 60cap;
+        }
+        .imgletra {
+           margin-top: 2%;
+        }
+    }
+   
+
+    /*TABLETA*/
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        
+        .text2 {
+            top: 30%;
+        }
+        .txt {
+            width: 85%;
+            font-size: 25px;
+            top: 65%;
+        }
+        .imgfondo{
+   
+            width: 100%;
+          height: 75cap;
+            
+         
+        }
+        .nav{
+            width: 100%;
+            height: 180px;
+            }
+            .login{
+           
+                    margin-top: 0%;
+               
+            }
+            .imgletra {
+                top: 50%;
+            }
+            .centrado {
+                top: 40%;
+            }
+    }
+   

@@ -1,0 +1,100 @@
+
+.body{
+background-color: #F0DFC8;
+}
+.nav{
+    width: 100%;
+    height: 200px;
+    background-color: #d6704b;
+    
+    }
+   
+    .color{
+        color: white;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .btn1{
+        width: 10;
+        height: 40px;
+        background-color: #ff895e;
+        bottom: 50px;
+    }
+    .img{
+        width: 25%;
+        margin-left: 15%;
+    }
+
+    .sombra{
+      box-shadow: 6px 6px 6px black;
+    }
+ 
+  
+   
+    .text2{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:cursive;
+        font-size:90px;
+    }   
+ 
+    .txt{
+       width: 90%;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+    } 
+    
+   
+/*SI FUNCIONA */
+    /*RESPONSIVE*/
+ 
+    /*MOVILES*/
+    @media screen and (min-width: 360px) and (max-width: 767px) {
+        .d-flex {
+            display: flex!important;
+            align-items: baseline;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+       
+        .text2 {
+           margin-top: 20%;
+            font-size: 70px;
+        }
+        .txt {
+            margin-top: 40%;
+            
+        }
+        .nav{
+            width: 100%;
+            height: 90px;
+           
+            
+            }
+
+    }
+   
+
+    /*TABLETA*/
+   @media screen and (min-width: 76px) and (max-width: 1024px) {
+        
+
+        .text2 {
+            top: 50%;
+        }
+        .txt {
+            width: 85%;
+            font-size: 25px;
+            top: 90%;
+        }
+        .nav{
+           height: 250px;
+            
+            }
+    }
+ 

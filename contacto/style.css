@@ -1,0 +1,156 @@
+.body{
+    background-color: #F0DFC8;
+    }
+
+.nav{
+    width: 100%;
+    height: 190px;
+    background-color: #d6704b;
+    
+    }
+  
+    .color{
+        color: white;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .btn1{
+        width: 10;
+        height: 40px;
+        background-color: #ff895e;
+        bottom: 50px;
+    }
+    .img{
+        width: 20%;
+        height: 50;
+        margin-left: 10%;
+    }
+    .sombra{
+      box-shadow: 6px 6px 6px black;
+    }
+   
+    .fondo2{
+        width: 100%;
+       
+    }
+    .contenedor{
+        width: 70%;
+        height: 30%;
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -40%); 
+    }
+    .color1{
+        width: 20%;
+        height: 60px;
+        background-color: white;
+        color: black;
+        bottom: 50px;
+        margin-top: 30%;
+        margin-left: 10%;
+        
+    }
+    
+
+    .text2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:cursive;
+        font-size:100px;
+    }   
+  
+    .txt{
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+    .txtimg{
+        position: absolute;
+        top: 90%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+    } 
+    .txtim{
+        position: absolute;
+        top: 112%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+    } 
+    .txti{
+        position: absolute;
+        top: 135%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    } 
+    .imge{
+        width: 70px;
+    }
+
+    /*MOVILES*/
+    @media  (max-width: 767px){
+        .text2{
+            top: 45%;
+            font-size:80px;
+        }  
+        .txt{
+            width: 70%;
+            top: 85%;
+        } 
+        .imge{
+            width: 50px;
+        }
+        
+    .txtimg{
+        top: 80%;
+        left: 40%;
+    } 
+    .txtim{
+        position: absolute;
+        top: 100%;
+        left: 40%;
+    } 
+    .txti{
+        top: 120%;
+        left: 37%;
+    } 
+
+    }
+  
+    /*TABLET*/
+    @media (min-width:767px) and (max-width:1024px) {
+  
+        .text2{
+            top: 45%;
+            font-size:80px;
+        }  
+        .txt{
+            width: 70%;
+            top: 85%;
+        } 
+        .imge{
+            width: 50px;
+        }
+        
+    .txtimg{
+        top: 80%;
+        left: 40%;
+    } 
+    .txtim{
+        position: absolute;
+        top: 100%;
+        left: 40%;
+    } 
+    .txti{
+        top: 120%;
+        left: 37%;
+    } 
+
+    }

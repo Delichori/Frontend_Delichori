@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario pedido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/LOGO.png">
+</head>
+
+<body class="body">
+  <div class="nav">
+    <nav class="nav d-flex justify-content-evenly ">
+      <a class="nav-link active color " aria-current="page" href="/index/index.html">Inicio</a>
+      <a class="nav-link color " href="/nosotros/we.html">Nosotros</a>
+      <img class="img" src="img/LOGO.png">
+
+      <a class="nav-link color " href="/contacto/contact.html">Contacto</a>
+    
+
+    </nav>
+  </div>
+  <div>
+
+    <b class="products">Realizar Pedido </b>
+    <div class="productsn border border-dark">
+      <h2>
+        NOTA: En el momento solo contamos con domicilios en la ciudad de Medellín, ¡pero no te preocupes! Pronto
+        contaremos con domicilios a nivel nacional.
+        Para realizar tu pedido por favor diligencia los siguientes campos completamente:
+      </h2>
+    </div>
+
+    <div class="comprap">
+      <form method="POST">
+        <div class="row">
+          <div class="col-mb-12">
+            <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula"
+              aria-label="Cédula"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');"><!--ESTO NO DEJA QUE ESCRIBA LETRAS SOLO NUMEROS-->
+
+          </div>
+          <div class="col-mb-3">
+            <input type="email" name="email" class="form-control fw-bold" id="exampleInputEmail1"
+              placeholder="Correo Electronico" aria-describedby="emailHelp">
+          </div>
+
+
+          <div class="col">
+            <input type="text" id="nombre" name="nombre" class="form-control fw-bold" placeholder="Nombre"
+              aria-label="Nombre">
+          </div>
+
+          <div class="col">
+            <input type="text" id="apellidos" name="apellidos" class="form-control fw-bold" placeholder="Apellido"
+              aria-label="Apellidos">
+          </div>
+
+          <div class="col-mb-12">
+            <input type="tel" id="celular" name="celular" class="form-control fw-bold" placeholder="Celular"
+              aria-label="Celular"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');"><!--ESTO NO DEJA QUE ESCRIBA LETRAS SOLO NUMEROS-->
+          </div>
+          <div class="col-mb-12">
+            <input type="text" id="direccion" name="direccion" class="form-control fw-bold"
+              placeholder="Dirección (Por favor incluye el nombre del barrio,edificio,apartamento...)"
+              aria-label="Apellido">
+          </div>
+          <div class="col">
+
+            <select id="inputState" class="form-select">
+
+              <option class=" fw-bold">Id Producto</option>
+              <option selected>Id 1</option>
+              <option selected>Id 2</option>
+            </select>
+
+          </div>
+          <div class="col">
+            <input type="number" id="cantidad" name="cantidad" class="form-control fw-bold" placeholder="Cantidad"
+              aria-label="Cantidad">
+          </div>
+      </form>
+    </div>
+
+
+  </div>
+  <div> <a class="btncomprar1 btn color1 border border-3 border-black sombra  " type="button" href="">Agregar Otro
+      Pedido</a> <!--cada que le click aparecer otro id producto y cantidad-->
+    <a class="btncomprar2 btn color1 border border-3 border-black sombra " type="button" id="btnSendOrder" href="">Enviar Pedido</a>
+    <!--cada que le click aparecer ventana ¡Pedido enviado exitosamente!-->
+  </div>
+  <div class="pagar  border border-dark">
+    <h2>
+      Total A Pagar: $
+    </h2>
+  </div>
+  </div>
+
+
+
+  </div>
+ 
+ <script src="order.js"></script>
+</body>
+
+</html>
