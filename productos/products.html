@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProducts.css">
     <link rel="shortcut icon" href="img/LOGO.png">
 </head>
-<body class="body" >
+<body class="body">
 <div class="nav">
     <nav class="nav d-flex justify-content-evenly ">
         <a class="nav-link active color letra" aria-current="page" href="/index/index.html">Inicio</a>
@@ -16,15 +16,16 @@
         <img class="img" src="img/LOGO.png" >
       
         <a class="nav-link color letra" href="/contacto/contact.html">Contacto</a>
-        <a class="btn btn1 color border border-3 border-black sombra" type="button" href="/login/login.html">Iniciar Seisón</a>
+        <a class="btn btn1 color border border-3 border-black sombra" type="button" href="/login/login.html">Iniciar Sesión</a>
         
       </nav>
 </div>
-<div>
-    
-    <b class="products">Nuestros Productos </b>
-    
-    <div class="compra">
+  
+   <div class="products"> <b> Nuestros Productos </b>
+   </div>
+
+
+    <!-- <div class="compra">
         <ul class="list-group">
             <h1>ID 1</h1>
             <h1>Producto</h1>
@@ -54,18 +55,40 @@
             <span class="input-group-text">$ 4.000</span>
         </li>
       </ul>
-      
+       -->
+    <form method="GET">',
+       <table class="table">
+        <tbody>
+        <thead>
+            <tr>
+                <th>Id Producto</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+    </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+    </div>
       <a class="btncomprar btn btn1 color1 border border-3 border-black sombra" 
-      type="button" href="/formulariopedido/orderform.html">Comprar</a>
- 
-</div>
-</div>
-
-    
+      type="button" href="/formulariopedido/orderform.html">Realizar Pedido</a>
+    </div>
 
 
+<footer class="pie">
+    <div>
+        <p class="autor d-flex row justify-content-center align-self-center">𝑅𝑒𝒶𝓁𝒾𝓏𝒶𝒹𝑜 𝓅𝑜𝓇 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃𝒶, 𝒴é𝓈𝓈𝒾𝒸𝒶 𝓎 𝒥𝑜𝒽𝒶𝓃𝒶</p>
+    </div>
+</footer>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="productos.js"></script>
+
 </body>
 </html>

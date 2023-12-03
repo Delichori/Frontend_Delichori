@@ -11,7 +11,7 @@
 <body class="body" >
 <div class="nav">
     <nav class="nav d-flex justify-content-evenly ">
-        <a class="nav-link active color " aria-current="page" href="/indexadministrartor/indexadministrator.html">Inicio</a>
+        <a class="nav-link active color " aria-current="page" href="/index/index.html">Inicio</a>
         <a class="nav-link color " href="/nosotros/we.html">Nosotros</a>
         <img class="img" src="img/LOGO.png" >
         <a class="nav-link color " href="/productos/products.html">Productos</a>
@@ -24,7 +24,7 @@
     <b class="admi">Registrar Administrador </b>
         
     <div class="comprap">
-      <form method="POST" id="registroForm">
+      <form method="POST">
         <div class="row">
           <div class="col-mb-12">
               <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula" aria-label="Cédula" oninput="this.value = this.value.replace(/[^0-9]/g, '');"><!--ESTO NO DEJA QUE ESCRIBA LETRAS SOLO NUMEROS-->
@@ -43,26 +43,19 @@
               </div>
 
             <div class="col-mb-12">
-                <input type="text" name="Clave" id="clave" class="form-control fw-bold" placeholder="Clave" aria-label="Clave">
+                <input type="password" name="Clave" id="clave" class="form-control fw-bold" placeholder="Clave" aria-label="Clave">
               </div>
               
-            <div class="col-mb-12">
-                <input type="text" name="RepiteClave" id="repetirclave" class="form-control fw-bold" placeholder="RepiteClave" aria-label="RepiteClave">
-              </div>
             <div>
-              
+                <a class="cancelar btn-lg btn color1 border border-3 border-black sombra " 
+              type="button" id="regisAdmin" >Registrar</a><!--CUANDO LE DE CLICK ALER ¡ADMINISTRADOR REGISTRADO EXITOSAMENTE-->
                  <a class="registrar btn-lg btn color1 border border-3 border-black sombra " 
-              type="button" onclick="registrarAdmin()"  >Registrar</a><!--CUANDO LE DE CLICK ALER ¡ADMINISTRADOR REGISTRADO EXITOSAMENTE-->
-     <a class="cancelar btn-lg btn color1 border border-3 border-black sombra " 
-              type="button" id="regisAdmin" href="/indexadministrartor/indexadministrator.html" >Cancelar</a>
+              type="button" href="/indexadministrartor/indexadministrator.html">Cancelar</a>
+   
             </div>
           </form>
 
             </div>
-            
-
- 
-
-       <script src="regisAdmin.js"></script>
+            <script src="regisAdmin.js"></script>
 </body>
 </html>

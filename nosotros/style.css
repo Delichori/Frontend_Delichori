@@ -1,5 +1,13 @@
+@font-face {
+    font-family: Jenang-Kudus;
+    src: url(Jenang-Kudus.ttf);
+    font-weight: 200%;
+
+}
+
 
 .body{
+    font-family: Jenang-Kudus;
 background-color: #F0DFC8;
 }
 .nav{
@@ -32,12 +40,13 @@ background-color: #F0DFC8;
   
    
     .text2{
+        font-family: Jenang-Kudus;
         position: absolute;
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family:cursive;
-        font-size:90px;
+        font-size: 200%;
+      
     }   
  
     .txt{
