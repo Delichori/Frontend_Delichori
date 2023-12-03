@@ -97,6 +97,11 @@
             background-color: white; 
     }
 
+    .pie{
+        width: 100%;
+        background-color: #d6704b;
+    }
+
     /*MOVIL*/
 
   @media  (max-width: 767px){

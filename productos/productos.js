@@ -27,8 +27,7 @@ let listarProductos = async () => {
                 <td>${product.description}</td>
                 <td>${product.sellingPrice}</td>
                 <td>
-                    <button class="btn btn-warning"> 💰</button>
-                    <button class="btn btn-danger"> ❌</button>
+                <input type="button" onclick="window.location.href='http://127.0.0.1:5504/realizarpedido/orderform.html?id=${product.productId}&nombre=${product.name}&descripcion=${product.description}&precio=${product.sellingPrice}';" value="✅" />
                 </td>
             </tr>`;
 

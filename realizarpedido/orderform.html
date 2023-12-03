@@ -9,6 +9,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/LOGO.png">
+
 </head>
 
 <body class="body">
@@ -19,11 +20,12 @@
       <img class="img" src="img/LOGO.png">
 
       <a class="nav-link color " href="/contacto/contact.html">Contacto</a>
-    
+
 
     </nav>
   </div>
   <div>
+
 
     <b class="products">Realizar Pedido </b>
     <div class="productsn border border-dark">
@@ -35,7 +37,7 @@
     </div>
 
     <div class="comprap">
-      <form method="POST">
+      <form method="POST" name="orden">
         <div class="row">
           <div class="col-mb-12">
             <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula"
@@ -71,22 +73,58 @@
           </div>
           <div class="col">
 
+            <script> const valores = window.location.search;
+              const urlParams = new URLSearchParams(valores);
+              var idproducto = urlParams.get('id');
+              var nombre = urlParams.get('nombre');
+              var descripcion = urlParams.get('descripcion');
+              var precio = urlParams.get('precio');
+            </script>
+
+            <table class="table">
+
+              <thead>
+                <tr>
+                  <th>Id Producto </th>
+                  <th>Nombre </th>
+                  <th>Descripción </th>
+                  <th>Precio </th>
+                </tr>
+              </thead>
+              <td>
+                <script>document.write(idproducto);</script>
+              </td>
+              <td>
+                <script>document.write(nombre);</script>
+              </td>
+              <td>
+                <script>document.write(descripcion);</script>
+              </td>
+              <td>
+                <script>document.write(precio);</script>
+              </td>
+
+
+            </table>
+
+
             <!-- <select id="inputState" class="form-select">
               <option class=" fw-bold">Id Producto</option>
               <option selected>Id 1</option>
               <option selected>Id 2</option>
             </select> -->
-            <form method="GET">
-           
-            <script src="producto_precio.js"></script>
-
-          </form>
-
 
           </div>
           <div class="col">
+
             <input type="number" id="cantidad" name="cantidad" class="form-control fw-bold" placeholder="Cantidad"
               aria-label="Cantidad">
+
+
+            <h2>
+              Total A Pagar: $
+              <script>document.write(precio);</script>
+            </h2>
           </div>
       </form>
     </div>
@@ -95,21 +133,25 @@
   </div>
   <div> <a class="btncomprar1 btn color1 border border-3 border-black sombra  " type="button" href="">Agregar Otro
       Pedido</a> <!--cada que le click aparecer otro id producto y cantidad-->
-    <a class="btncomprar2 btn color1 border border-3 border-black sombra " type="button" id="btnSendOrder" href="">Enviar Pedido</a>
+    <a class="btncomprar2 btn color1 border border-3 border-black sombra " type="button" id="btnSendOrder"
+      href="">Enviar Pedido</a>
     <!--cada que le click aparecer ventana ¡Pedido enviado exitosamente!-->
   </div>
-  <div class="pagar  border border-dark">
-    <h2>
-      Total A Pagar: $
-    </h2>
-  </div>
+
   </div>
 
 
 
   </div>
- 
- <script src="order.js"></script>
+
+  <footer class="pie">
+    <div>
+      <p class="autor d-flex row justify-content-center align-self-center">𝑅𝑒𝒶𝓁𝒾𝓏𝒶𝒹𝑜 𝓅𝑜𝓇 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃𝒶,
+        𝒴é𝓈𝓈𝒾𝒸𝒶 𝓎 𝒥𝑜𝒽𝒶𝓃𝒶</p>
+    </div>
+  </footer>
+
+  <script src="order.js"></script>
 </body>
 
 </html>

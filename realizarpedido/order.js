@@ -14,6 +14,8 @@ let realizarPedido = async () => {
     campos.celucomment = document.getElementById("celular").value;
     campos.clientAdress = document.getElementById("direccion").value;
     campos.quantity = document.getElementById("cantidad").value;
+    campos.productId = document.getElementById("id").value;
+    campos.total = document.getElementById("precio").value;
 
 
     const peticion = await fetch("http://localhost:8080/delichori/api/orders/save",
