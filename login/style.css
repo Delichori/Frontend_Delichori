@@ -1,5 +1,16 @@
+@font-face {
+    font-family: Jenang-Kudus;
+    src: url(Jenang-Kudus.ttf);
+    font-size: 200%;
+
+}
+
+
+
 .body{
+    font-size: 190%;
     background-color: #F0DFC8;
+    font-family: Jenang-Kudus;
     }
 
 .nav{
@@ -18,7 +29,8 @@
         width: 40;
         height: 40px;
         background-color: #ff895e;
-        bottom: 50px;
+        bottom: 80px;
+    
     }
     .img{
         width: 20%;
@@ -49,11 +61,11 @@
     
     .text2{
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family:cursive;
-        font-size:80px;
+        font-family: Jenang-Kudus;
+        font-size:250%;
 
     }  
    
@@ -62,7 +74,7 @@
             width: 35%;
             height: 20%;
             position: absolute;
-            top: 85%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
     }

@@ -11,7 +11,6 @@ let regisAdmin = async () => {
     campos.managerLastName = document.getElementById("apellido").value;
     campos.email = document.getElementById("email").value;
     campos.password = document.getElementById("clave").value;
-
     /*
         {
             "managerId": 999,
@@ -30,8 +29,6 @@ let regisAdmin = async () => {
             },
             body: JSON.stringify(campos)
         });
-
-
 
 if (peticion.ok) {
    
