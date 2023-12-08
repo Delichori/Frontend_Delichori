@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Pedido</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/LOGO.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Administrador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/LOGO.png">
 </head>
-<body class="body" >
 
-<div class="nav">  
+<body class="body">
+  <div class="nav">
     <nav class="nav d-flex justify-content-evenly ">
-      <a class="nav-link color " href="/indexadministrartor/indexadministrator.html">Inicio</a>
-        <a class="nav-link color " href="/nosotros/we.html">Nosotros</a>
-        <img class="img" src="img/LOGO.png" >
-        <a class="nav-link color " href="/productoadministrador/productsadministrator.html">Productos</a>
-        <a class="nav-link color " href="/contacto/contact.html">Contacto</a></div>
- 
-        
-<div >
-    <b class="text2">Ver Pedido</b>
-</div>
+      <a class="nav-link active color " aria-current="page" href="/ok_index/index.html">Inicio</a>
+      <a class="nav-link color " href="/ok_nosotros/we.html">Nosotros</a>
+      <img class="img" src="img/LOGO.png">
+      <a class="nav-link color " href="/ok_productos/products.html">Productos</a>
+      <a class="nav-link color " href="/ok_contacto/contact.html">Contacto</a>
 
+    </nav>
+  </div>
+  <div>
 
-<div class="table  ">
-    <div class=" p-2  bg-light   rounded border border-dark">Id Pedido</div>
-     <div class=" p-2  bg-light rounded   border border-dark">Cedula</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Nombre</div>
-     <div class=" p-2  bg-light   rounded border border-dark">Apellido</div>
+    <b class="admi">Registrar Administrador </b>
 
-     <div class=" p-2  bg-light  rounded  border border-dark">Celular</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Dirreccion</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Estado</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Fecha</div>
+    <div class="comprap">
+      <form method="GET">
+        <div class="row">
+          <div class="col-mb-12">
+            <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula"
+              aria-label="Cédula"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');"><!--ESTO NO DEJA QUE ESCRIBA LETRAS SOLO NUMEROS-->
 
-     <div class=" p-2  bg-light  rounded  border border-dark">Id Producto</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Cantidad</div>
-     <div class=" p-2  bg-light  rounded  border border-dark">Valor total</div>
+          </div>
+
+          <div class="VerPedidoCliente">
+
+            <table class="table">
+             <tbody>
+                <thead>
+                    <tr>
+                        <th>Id Pedido</th>
+                        <th>Cédula Cliente</th>
+                        <th>Nombre Cliente</th>
+                        <th>Apellido Cliente</th>
+                        <th>Dirección</th>
+                        <th>Fecha</th>
+                        <th>Comentario</th>
+                        <th>Estado</th>
+                        <th>productId</th>
+                        <th>quantity</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+         </tbody>
+         </table>
+     </div>
      
-     <br>
-    <a type="button" class="btn color1 border-3 border-black sombra" href="/actualizarpedido/actualizarpedido.html" >Actualizar</a>
-    <a href=""> <button  type="button" class="btn color1 border-3 border-black sombra" >Eliminar</button>
-</div>
-  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </div>
+
+        
+            <a class="cancelar btn-lg btn color1 border border-3 border-black sombra " type="button"
+              id="enviar">Consultar</a><!--CUANDO LE DE CLICK ALER ¡ADMINISTRADOR REGISTRADO EXITOSAMENTE-->
+        
+          </div>
+      </form>
+
+    </div>
+
+    <!-- <footer class="pie"> -->
+      <!-- <div> -->
+          <!-- <p class="autor d-flex row justify-content-center align-self-center">𝑅𝑒𝒶𝓁𝒾𝓏𝒶𝒹𝑜 𝓅𝑜𝓇 𝒱𝒶𝓁𝑒𝓃𝓉𝒾𝓃𝒶, 𝒴é𝓈𝓈𝒾𝒸𝒶 𝓎 𝒥𝑜𝒽𝒶𝓃𝒶</p> -->
+      <!-- </div> -->
+  <!-- </footer> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="VerPedidoCliente.js"></script>
 </body>
+
 </html>

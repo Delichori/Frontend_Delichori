@@ -1,25 +1,80 @@
-//MOSTRAR Y OCULTAR DE LOGIN CLAVE
+//traewr las verifivacdiaones de la copia
 
-document.querySelector('.span').addEventListener('click', e => {
-  let passwordInput = document.querySelector('#password');
-  if (e.target.classList.contains('show')) {
-      e.target.classList.remove('show');
-      e.target.textContent = 'Ocultar';
-      passwordInput.type = 'text';
-  } else {
-      e.target.classList.add('show');
-      e.target.textContent = 'Mostrar';
-      passwordInput.type = 'password';
-  }
+
+/*{
+    "managerId": 12345678,
+    "managerName": "Gloria",
+    "managerLastName": "Ayala",
+    "email": "delichorilagloria@gmail.com",
+    "password": "123245D"
+}*/
+
+let boton = document.getElementById("enviar");
+boton.addEventListener("click", evento => {
+  let cedula = document.getElementById("cedula").value;
+  let password = document.getElementById("password").value;
+  verificar(cedula, password);
 });
 
-//CORREO SOLO SEA MINUSCULA
-document.getElementById('exampleInputEmail1').addEventListener('input', convertToLowercase);
+let verificar = async (cedula, password) => {
+  try {
+    let peticion = await fetch("http://localhost:8080/delichori/api/administrators/" + cedula, {
 
-function convertToLowercase() {
-let emailInput = document.getElementById('exampleInputEmail1');
-emailInput.value = emailInput.value.toLowerCase();
-}
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
+
+
+    if (peticion.ok) {
+
+      let admin = await peticion.json();
+      let password2 = admin.password;
+      if (password2 == password) {
+
+        //ojojojo madar al meniiiiiiiiiiiiiii adnmin
+        alert("clave correcta");
+        //alert("window.location.href=/ok_indexadministrator/indexadministrator.html");
+
+      } else {
+        alert("la clave es incoirrecxt");
+      }
+
+    } else {
+
+
+      alert(`Imgrese un Usuario válido`);
+
+    }
+
+
+
+  } catch (error) {
+    console.error("Error al obtener los productos:", error.message);
+  };
+};
+// let products = await peticion.json();
+
+//         let contenidoTabla = "";
+
+//         for (let product of products) {
+//             let contenidoFila = `<tr>
+//                 <td>${product.productId}</td>
+//                 <td>${product.name}</td>
+//                 <td>${product.description}</td>
+//                 <td>${product.sellingPrice}</td>
+//                 <td>
+
+
+
+
+
+
+
+
+
 
 /*NO DA
 //EL LOGIN INICIE CON DATOS

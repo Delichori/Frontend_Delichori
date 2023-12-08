@@ -31,26 +31,18 @@ let regisPedido = async () => {
             },
             body: JSON.stringify(campos)
         });
-
-
-if (peticion.ok) {
-   alert("Se guardó correctamente!"
-
-   + document.getElementById("nombre").value,
-   + document.getElementById("apellidos").value,
-   +document.getElementById("idpro").value,
-          + document.getElementById("cantidad").value,
-           + ((document.getElementById("valor").value)*(document.getElementById("cantidad").value)));
-    limpiarFormulario();
-    Swal.fire({
-        title: 'Registro exitoso',
-        text: '¡Administrador registrado correctamente!',
-        icon: 'success',
-        confirmButtonColor: '#ff895e',
-    });
-} else { 
-    alert("Error en el registro. Por favor, inténtalo de nuevo.");
-}
+    if (peticion.ok) {
+        
+            Swal.fire({
+                title: 'Registro exitoso',
+                text: '¡Pedido enviado correctamente!',
+                icon: 'success',
+                confirmButtonColor: '#ff895e',
+            });
+    }else{
+            alert("Error en el registro. Por favor, inténtalo de nuevo.");
+        }
+        limpiarFormulario();
 };
 
 let limpiarFormulario = () => {
@@ -83,4 +75,15 @@ let limpiarFormulario = () => {
         "total": 0.0
     }
 ]
-}*/
+}
+
+
+
+//    alert("Se guardó correctamente!"
+
+            //    + document.getElementById("nombre").value,
+            //    + document.getElementById("apellidos").value,
+            //    +document.getElementById("idpro").value,
+            //           + document.getElementById("cantidad").value,
+            //            + ((document.getElementById("valor").value)*(document.getElementById("cantidad").value)));
+        //limpiarFormulario();*/

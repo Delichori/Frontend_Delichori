@@ -15,11 +15,11 @@
 <body class="body">
   <div class="nav">
     <nav class="nav d-flex justify-content-evenly ">
-      <a class="nav-link active color " aria-current="page" href="/index/index.html">Inicio</a>
-      <a class="nav-link color " href="/nosotros/we.html">Nosotros</a>
+      <a class="nav-link active color " aria-current="page" href="/ok_index/index.html">Inicio</a>
+      <a class="nav-link color " href="/ok_nosotros/we.html">Nosotros</a>
       <img class="img" src="img/LOGO.png">
-      <a class="nav-link color " href="/productos/products.html">Productos</a>
-      <a class="nav-link color " href="/contacto/contact.html">Contacto</a>
+      <a class="nav-link color " href="/ok_productos/products.html">Productos</a>
+      <a class="nav-link color " href="/ok_contacto/contact.html">Contacto</a>
     </nav>
   </div>
 
@@ -32,7 +32,7 @@
     </h3>
   </div>
 
-  <form method="POST">
+  <div>
     <div class="comprap">
 
       <div class="col-mb-12">
@@ -51,6 +51,7 @@
         }
         capturarFecha();
     </script>
+    <br>
 
     <div class="col-mb-12">
         <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula"
@@ -90,16 +91,13 @@
           let descripcion = urlParams.get('descripcion');
           let precio = urlParams.get('precio');
         </script>
-
-
         <input type="hidden" id="idpro" name="idpro">
         <script>document.getElementById("idpro").value=idproducto;</script>
 
         <input type="hidden" id="valor" name="valor">
         <script>document.getElementById("valor").value=precio;</script>
 
-       
-       
+            
         <table class="table">
           <thead>
             <tr>
@@ -127,15 +125,16 @@
    
 
 
-  </form>
+  </div>
 
-  <a class="btncomprar2 btn color1 border border-3 border-black sombra " type="button" id="btnSendOrder" href="">Enviar
+  <a class="btncomprar2 btn color1 border border-3 border-black sombra " type="button" id="btnSendOrder" >Enviar
     Pedido</a>
   <!--cada que le click aparecer ventana ¡Pedido enviado exitosamente!-->
   </div>
 
-  <script src="order.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="order.js"></script>
 </body>
 
 </html>

@@ -47,6 +47,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-100%, -40%); 
+        font-size: 100%;
     }
     .color1{
         width: 40%;

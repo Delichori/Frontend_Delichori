@@ -11,11 +11,11 @@
 <body class="body" >
 <div class="nav">
     <nav class="nav d-flex justify-content-evenly ">
-        <a class="nav-link active color" aria-current="page" href="/index/index.html">Inicio</a>
-        <a class="nav-link color" href="/nosotros/we.html">Nosotros</a>
+        <a class="nav-link active color" aria-current="page" href="/ok_index/index.html">Inicio</a>
+        <a class="nav-link color" href="/ok_nosotros/we.html">Nosotros</a>
         <img class="img" src="img/LOGO.png" >
-        <a class="nav-link color " href="/productos/products.html">Productos</a>
-        <a class="nav-link color" href="/contacto/contact.html">Contacto</a>
+        <a class="nav-link color " href="/ok_productos/products.html">Productos</a>
+        <a class="nav-link color" href="/ok_contacto/contact.html">Contacto</a>
         
       </nav>
 </div>
@@ -25,10 +25,12 @@
 </div>
 
 
-     <form class="formlogin">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" for="password" class="form-label">Ingrese su correo electronico</label>
-        <input type="email"  name="email" class="form-control" id="exampleInputEmail1"  placeholder="ejemplo@gmail.com" aria-describedby="emailHelp" required>
+     <form method="GET">
+      <div class="col-mb-12">
+        <input type="number" id="cedula" name="cedula" class="form-control fw-bold" placeholder="Cédula"
+          aria-label="Cédula"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '');"><!--ESTO NO DEJA QUE ESCRIBA LETRAS SOLO NUMEROS-->
+
       </div>
     
       <div class="mb-3">
@@ -40,7 +42,7 @@
    
     
       <a class="centrado  btn color1 border border-3 border-black sombra" 
-      type="button" href="/indexadministrartor/indexadministrator.html">Iniciar Sesión</a> <!--SE VA A LOGINADMI Y PONER ALER BIENVENIDO-->
+      type="button" id="enviar">Iniciar Sesión</a> <!--SE VA A LOGINADMI Y PONER ALER BIENVENIDO-->
     </form>
     
 

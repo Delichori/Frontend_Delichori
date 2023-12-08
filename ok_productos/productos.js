@@ -40,3 +40,10 @@ let listarProductos = async () => {
     }
 };
 
+/*
+"productId": 1,
+        "name": "Chorizo tradicional",
+        "description": "Delicioso chorizo de cerdo tradicional",
+        "sellingPrice": 4000.0,
+        "stock": 10
+        */
