@@ -1,13 +1,14 @@
-//CALCULAR GANANCIA
-// function calcularGanancia() {
-    // var precioCosto = parseFloat(document.getElementById('precioCosto').value) || 0;
-    // var precioVenta = parseFloat(document.getElementById('precioVenta').value) || 0;
-    // var ganancia = precioVenta - precioCosto;
-    // document.getElementById('ganancia').value = '$' + ganancia.toFixed(2);
-  // };
-  //OJOOOO ME FALTA MANDAR DE AQUI PARA ALLÁ LA GANANCIA POR PRODUCTo POR ESO COMENTÉ DESDE EL HTML TAMBÉN
-
-  let boton = document.getElementById("btn");
+   /*{
+        "productId": 4,
+        "name": "Morcilla",
+        "description": "Deliciosa morcilla",
+        "costPrice": 5000,
+        "sellingPrice": 9000,
+        "stock": 15
+    }*/ 
+ 
+ 
+ let boton = document.getElementById("btn");
   boton.addEventListener("click", evento => {
       createProduct();
   });
@@ -22,14 +23,7 @@
       campos.sellingPrice = document.getElementById("precioVenta").value;
       campos.stock = document.getElementById("existencia").value;
 
-      /*{
-        "productId": 4,
-        "name": "Morcilla",
-        "description": "Deliciosa morcilla",
-        "costPrice": 5000,
-        "sellingPrice": 9000,
-        "stock": 15
-    }*/
+   
   
       const peticion = await fetch("http://localhost:8080/delichori/api/products/save",
           {

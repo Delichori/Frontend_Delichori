@@ -51,8 +51,10 @@ let listarAdmin = async (cedula) => {
         console.error("Error al obtener el admin:", error.message);
     };
 
+    
+
     let boton = document.getElementById("eliminar");
-    boton.addEventListener("onclick", evento => {
+    boton.addEventListener("click", evento => {
         let cedula = document.getElementById("cedula").value;
         borrarAdmin(cedula);
     });
@@ -77,12 +79,21 @@ let listarAdmin = async (cedula) => {
                     icon: 'success',
                     confirmButtonColor: '#ff895e',
                 });
-                throw new Error(`Error al obtener los productos. Código de estado: ${peticion.status}`);
+                throw new Error(`Error al obtener los adminis. Código de estado: ${peticion.status}`);
             }
 
 
         } catch (error) {
-            console.error("Error al obtener los productos:", error.message);
+            console.error("Error al obtener los adminis:", error.message);
+            
         };
     };
+};
+
+//IMPLEMENTAR BORRAR TABLA
+function borrarTabla(){
+    contenidoFila = querySelectorAll(".table tbody tr");
+    contenidoFila.forEach((f)=>{
+        f.remove();
+    });
 };
