@@ -25,9 +25,7 @@
 
 <div>  <b class="text2">Crear Producto</b></div>
 
-<div class="form">
-  
-  <form id="formularioProducto" method="POST">
+<div class="form" id="formularioProducto" method="POST">
     <label for="idProducto">ID Producto:</label>
     <input type="text" id="idProducto" name="idProducto" class="form-control fw-bold" placeholder="ID Producto" required>
 
@@ -40,17 +38,11 @@
     <label for="descripcion">Descripción:</label>
     <textarea id="descripcion" name="descripcion" class="form-control fw-bold" placeholder="Descripción" required></textarea>
 
-    <label for="precioCosto">Precio Costo:</label>
-    <input type="text" id="precioCosto" name="precioCosto" class="form-control fw-bold" placeholder="Precio Costo" oninput="calcularGanancia()" required>
-
     <label for="precioVenta">Precio Venta:</label>
-    <input type="text" id="precioVenta" name="precioVenta" class="form-control fw-bold" placeholder="Precio Venta" oninput="calcularGanancia()" required>
+    <input type="text" id="precioVenta" name="precioVenta" class="form-control fw-bold" placeholder="Precio Venta"s>
 
-    <!-- <label for="ganancia">Ganancia:</label> -->
-    <!-- <input type="text" id="ganancia" name="ganancia" class="form-control fw-bold" placeholder="Ganancia" readonly> -->
-
-    <button type="button"  class=" btn color1 border-3 border-black sombra" id="btn">Crear Producto</button><!--AL DAR CLIC SALIR VENTANA SI SE CREO O NO-->
-  </form>
+   
+    <button type="button"  class=" btn color1 border-3 border-black sombra" id="btn">Crear Producto</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>

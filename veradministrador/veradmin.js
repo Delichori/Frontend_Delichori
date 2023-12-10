@@ -52,14 +52,3 @@ let listarAdmin = async (cedula) => {
         console.error("Error al obtener los productos:", error.message);
     };
 };
-// let products = await peticion.json();
-
-//         let contenidoTabla = "";
-
-//         for (let product of products) {
-//             let contenidoFila = `<tr>
-//                 <td>${product.productId}</td>
-//                 <td>${product.name}</td>
-//                 <td>${product.description}</td>
-//                 <td>${product.sellingPrice}</td>
-//                 <td>

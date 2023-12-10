@@ -71,8 +71,9 @@ let listarAdmin = async (cedula) => {
                     'Authorization': 'Basic ' + base64Credentials,
                 },
             });
-
+            
             if (!peticion.ok) {
+                limpiarFormulario();
                 Swal.fire({
                     title: 'Registro exitoso',
                     text: '¡Administrador ELIMINADO correctamente!',
@@ -90,10 +91,9 @@ let listarAdmin = async (cedula) => {
     };
 };
 
-//IMPLEMENTAR BORRAR TABLA
-function borrarTabla(){
-    contenidoFila = querySelectorAll(".table tbody tr");
-    contenidoFila.forEach((f)=>{
-        f.remove();
-    });
+let limpiarFormulario = () => {
+    document.getElementById("cedula").value = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("email").value = "";
 };

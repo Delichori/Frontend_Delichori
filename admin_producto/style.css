@@ -42,9 +42,8 @@
 }
 
 .text2 {
-    top: 50%;
-    margin-left: 40%;
-    font-size: 200%;
+    margin-left: 35%;
+    font-size: 150%;
 
 }
 
@@ -54,7 +53,7 @@
     top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 150%;
+    font-size: 100%;
 
 }
 .imagen {
@@ -64,8 +63,22 @@
     transform: translate(-50%, -50%);
     width: 80%;
 }
+.form{
+    width: 80%;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100%;
+}
+.btn{
+    width: 50%;
+    height: 40px;
+    background-color: #ff895e;
+    bottom: 90px;
+    font-size: larger;
 
-
+}
 
 /*SI FUNCIONA */
 /*RESPONSIVE*/
