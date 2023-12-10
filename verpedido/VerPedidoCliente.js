@@ -53,6 +53,12 @@ let listarPedido = async (cedula) => {
 
 
 
+
+
+
+
+
+
 /*let boton = document.getElementById("enviar");
 boton.addEventListener("click", evento => {
     let cedula = document.getElementById("cedula").value;

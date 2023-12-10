@@ -14,12 +14,14 @@ boton.addEventListener("click", evento => {
 
 let listarAdmin = async (cedula) => {
     try {
+        let base64Credentials = btoa('12345678' + ':' + '12345D');
         let peticion = await fetch("http://localhost:8080/delichori/api/administrators/"+cedula, {
 
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
+                'Authorization': 'Basic ' + base64Credentials,
             },
         });
 
