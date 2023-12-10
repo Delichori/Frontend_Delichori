@@ -1,7 +1,7 @@
 @font-face {
     font-family: Jenang-Kudus;
     src: url(Jenang-Kudus.ttf);
-    font-size: 200%;
+    font-size: 130%;
 
 }
 .body{
@@ -13,7 +13,7 @@
     width: 100%;
     height: 200px;
     background-color: #d6704b;
-    font-size: 130%
+    font-size: 120%
     
     }
    
@@ -39,7 +39,7 @@
  
 
     .table {
-        width: 40%;
+        width: 70%;
        height: 40%;
       position: absolute;
       top: 90%;
@@ -53,7 +53,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Jenang-Kudus;
-    font-size:70px;
+    font-size:150%;
    
 }  
 .color1{
