@@ -83,11 +83,12 @@
     }
      
     .footer{ 
+        width: 101%;
         background-color:  #d6704b;
     }
     
     .pie img{
-        width: 90px;
+        width: 70px;
         
     }
  

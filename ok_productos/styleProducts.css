@@ -60,26 +60,20 @@
     } 
 
     .compra2{
-        width: 50%;
+        padding-top: 15%;
+        width: 90%;
         position: absolute;
-        top: 64%;
-        left: 73%;
+        top: 120%;
+        left: 50%;
         transform: translate(-50%, -50%);
     
     } 
-   .btncomprar{
-        position: absolute;
-        top: 45%;
-        left: 55%;
-        transform: translate(-100%, -40%); 
-        font-family: Jenang-Kudus;
-        font-size: 180%;
-    }
+ 
 
 .imagen{
     position: absolute;
     top: 70%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
 }

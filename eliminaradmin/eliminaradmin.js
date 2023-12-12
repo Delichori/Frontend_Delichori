@@ -50,9 +50,8 @@ let listarAdmin = async (cedula) => {
     } catch (error) {
         console.error("Error al obtener el admin:", error.message);
     };
-
     
-
+};
     let boton = document.getElementById("eliminar");
     boton.addEventListener("click", evento => {
         let cedula = document.getElementById("cedula").value;
@@ -71,29 +70,57 @@ let listarAdmin = async (cedula) => {
                     'Authorization': 'Basic ' + base64Credentials,
                 },
             });
-            
-            if (!peticion.ok) {
-                limpiarFormulario();
-                Swal.fire({
-                    title: 'Registro exitoso',
-                    text: '¡Administrador ELIMINADO correctamente!',
-                    icon: 'success',
-                    confirmButtonColor: '#ff895e',
-                });
-                throw new Error(`Error al obtener los adminis. Código de estado: ${peticion.status}`);
+
+            if (!peticion.ok) 
+    
+           limpiarFormulario();
+            Swal.fire({
+                title: 'Eliminado',
+                text: '¡Administrador eliminado correctamente!',
+                icon: 'success',
+                confirmButtonColor: '#ff895e',
+            });
+            {
+                throw new Error(`Error al obtener Registro. Código de estado: ${peticion.status}`);
             }
-
-
+    
         } catch (error) {
-            console.error("Error al obtener los adminis:", error.message);
-            
-        };
-    };
-};
+            console.error("Error al obtener los Registro:", error.message);
+        }
 
-let limpiarFormulario = () => {
+    
+    let limpiarFormulario = () => {
     document.getElementById("cedula").value = "";
     document.getElementById("nombre").value = "";
     document.getElementById("apellido").value = "";
     document.getElementById("email").value = "";
+    };
+
 };
+
+           
+
+//             if (peticion.ok) {
+//                 limpiarFormulario();
+//                 Swal.fire({
+//                     title: 'Registro exitoso',
+//                     text: '¡Administrador ELIMINADO correctamente!',
+//                     icon: 'success',
+//                     confirmButtonColor: '#ff895e',
+//                 });
+//                 throw new Error(`Error al obtener los adminis. Código de estado: ${peticion.status}`);
+//             }
+
+
+//         } catch (error) {
+//             console.error("Error al obtener los adminis:", error.message);
+            
+//         };
+//     };
+// };
+
+// let limpiarFormulario = () => {
+//     document.getElementById("cedula").value = "";
+//     document.getElementById("nombre").value = "";
+//     document.getElementById("apellido").value = "";
+//     document.getElementById("email").value = "";*/

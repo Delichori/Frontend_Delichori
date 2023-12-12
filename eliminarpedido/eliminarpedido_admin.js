@@ -68,7 +68,7 @@ borrarPedido = async (orderId) => {
         
         if (peticion.ok) {
             Swal.fire({
-                title: 'Registro exitoso',
+                title: 'Eliminado',
                 text: '¡Pedido ELIMINADO correctamente!',
                 icon: 'success',
                 confirmButtonColor: '#ff895e',
